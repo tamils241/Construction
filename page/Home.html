@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildCon Home</title>
+
+  <link rel="stylesheet" href="Home.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <header class="home-header" id="home">
+    <nav class="navbar">
+      <h1 class="logo">Build<span>Con</span></h1>
+
+      <ul class="nav-links" id="homeNavLinks">
+        <li><a href="../index.html">Main</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn" id="homeMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h3>Construction & Engineering</h3>
+        <h1>We Build Strong Spaces For Better Living</h1>
+        <p>
+          BuildCon delivers residential, commercial, and renovation projects
+          with quality materials, expert planning, and on-time delivery.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="history" id="history">
+      <div class="section-title">
+        <h2>Our Project History</h2>
+        <p>From small homes to large commercial buildings, our work has grown with every project.</p>
+      </div>
+
+      <div class="history-container">
+        <div class="history-card">
+          <span>2015</span>
+          <h3>Company Started</h3>
+          <p>
+            BuildCon began with residential construction and small renovation
+            projects focused on strong foundations and neat finishing.
+          </p>
+        </div>
+
+        <div class="history-card">
+          <span>2018</span>
+          <h3>Commercial Projects</h3>
+          <p>
+            Our team expanded into office spaces, retail buildings, and
+            structured project management for larger clients.
+          </p>
+        </div>
+
+        <div class="history-card">
+          <span>2022</span>
+          <h3>Modern Design Work</h3>
+          <p>
+            We added architecture planning, material consultation, and modern
+            construction methods to improve project quality.
+          </p>
+        </div>
+
+        <div class="history-card">
+          <span>2026</span>
+          <h3>Trusted Build Partner</h3>
+          <p>
+            Today BuildCon handles homes, apartments, commercial interiors,
+            renovation, and full construction delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Some recent construction work completed by our expert team.</p>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5" alt="Commercial construction project" />
+          <div>
+            <h3>Commercial Tower</h3>
+            <p>Steel structure, safety planning, and concrete work for a modern business space.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction planning project" />
+          <div>
+            <h3>Residential Villa</h3>
+            <p>Complete home construction with planning, elevation design, and interior finishing.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Modern building project" />
+          <div>
+            <h3>Corporate Office</h3>
+            <p>Modern office building completed with durable materials and clean architectural lines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Have a new project?</h2>
+      <p>Tell us your idea and our team will help you plan the next step.</p>
+      <a href="../index.html#contact" class="btn">Get In Touch</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2>BuildCon</h2>
+    <p>&copy; 2026 BuildCon. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const homeMenuBtn = document.getElementById("homeMenuBtn");
+    const homeNavLinks = document.getElementById("homeNavLinks");
+
+    homeMenuBtn.addEventListener("click", () => {
+      homeNavLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
