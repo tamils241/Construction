@@ -22,7 +22,7 @@ a {
   color: white;
   background:
     linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
-    url("../construction-home-page/asset/work2.webp") center/cover no-repeat;
+    url("../asset/work2.webp") center/cover no-repeat;
 }
 
 .navbar {
@@ -340,12 +340,17 @@ a {
 }
 
 @media (max-width: 900px) {
-  .footer {
-    padding: 50px 24px 24px;
+  .navbar {
+    position: relative;
+    z-index: 1000;
   }
 
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-links {
+    z-index: 9999;
+  }
+
+  .hero-content {
+    z-index: 1;
   }
 }
 
@@ -460,4 +465,24 @@ a {
 }
 .hero-title{
     text-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #111;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
 }

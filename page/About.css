@@ -22,7 +22,7 @@ a {
   color: white;
   background:
     linear-gradient(rgba(0,0,0,0.66), rgba(0,0,0,0.66)),
-    url("../construction-home-page/asset/construction.webp") center/cover no-repeat;
+    url("../asset/construction.webp") center/cover no-repeat;
 }
 
 .navbar {
@@ -466,4 +466,43 @@ a {
     .hero-tag{
         font-size: 16px;
     }
+}
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #111;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+.page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-links.active {
+  display: flex;
+  z-index: 9999;
+}
+@media (max-width: 900px) {
+  .nav-links.active ~ .hero-content {
+    visibility: hidden;
+  }
 }
