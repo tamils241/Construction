@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Construction Home Page</title>
+  <title>Stackly Main Page</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -20,7 +20,7 @@
   <div class="loader" id="loader">
     <div class="loader-content">
       <i class="fa-solid fa-helmet-safety"></i>
-      <h2>Build<span>Con</span></h2>
+      <img class="loader-logo" src="asset/logo.webp" alt="BuildCon logo" />
       <div class="spinner"></div>
     </div>
   </div>
@@ -29,15 +29,22 @@
   <header class="header">
 
     <nav class="navbar">
-      <h1 class="logo">Build<span>Con</span></h1>
+      <img class="logo" src="asset/logo.webp" alt="BuildCon logo" />
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="page/Home.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-menu" id="navLinks">
+        <ul class="nav-links">
+          <li><a href="../page/Home.html">Home</a></li>
+          <li><a href="../page/About.html">About</a></li>
+          <li><a href="../page/services.html">Services</a></li>
+          <li><a href="../page/Project.html">Projects</a></li>
+          <li><a href="../page/Contact.html">Contact</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+          <a href="../page/NotFoud.html" class="login-link">Login</a>
+          <a href="../page/NotFoud.html" class="signup-link">Sign Up</a>
+        </div>
+      </div>
 
       <div class="menu-btn" id="menuBtn">
         <i class="fa-solid fa-bars"></i>
@@ -48,20 +55,46 @@
     <section class="hero">
 
       <div class="hero-content">
-        <h3>Best Construction Company</h3>
+        <h3 class="fade-in">Best Construction Company</h3>
 
-        <h1>
-          Building Your <span>Dream</span> Into Reality
-        </h1>
+        <h1 class="typing-text"> Building Your<br>
+       <span>Dream</span> Into Reality
+       </h1>
 
-        <p>
-          We provide high-quality construction services with modern
-          architecture and professional engineering solutions.
-        </p>
+        <p class="fade-up">
+      Stackly is a professional construction company delivering
+      high-quality residential, commercial, and industrial projects.
+      We combine modern architecture, advanced engineering, and
+      experienced professionals to create durable and innovative
+      structures that stand the test of time.
+    </p>
+
+    <p class="hero-sub-text fade-up delay">
+      From planning and design to construction and renovation,
+      we provide complete solutions with safety, quality,
+      and customer satisfaction as our top priorities.
+    </p>
+
+        <div class="hero-highlights">
+          <div>
+            <strong>250+</strong>
+            <span>Projects</span>
+          </div>
+
+          <div>
+            <strong>15+</strong>
+            <span>Years</span>
+          </div>
+
+          <div>
+            <strong>120+</strong>
+            <span>Engineers</span>
+          </div>
+        </div>
 
         <div class="hero-buttons">
-          <button class="btn">Get Started</button>
-          <button class="btn btn-outline">Learn More</button>
+          <a href="../page/NotFoud.html" class="btn">Get Started</a>
+          <a href="../page/NotFoud.html" class="btn btn-outline">Learn More</a>
         </div>
       </div>
 
@@ -69,43 +102,40 @@
 
   </header>
 
-  <!-- About -->
   <section class="about" id="about">
 
-    <div class="about-image">
-      <img
-        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd"
-        alt="construction"
-      />
-    </div>
+  <div class="about-image animate-left">
+    <img src="asset/work.webp" alt="construction">
+  </div>
 
-    <div class="about-content">
-      <h2>About Our Company</h2>
+  <div class="about-content animate-right">
 
-      <p>
-        We are a trusted construction company delivering residential,
-        commercial, and industrial projects with excellence and innovation.
-      </p>
+    <h2 class="about-title">About Our Company</h2>
 
-      <div class="about-boxes">
+    <p class="about-text">
+      We are a trusted construction company delivering residential,
+      commercial, and industrial projects with excellence and innovation.
+    </p>
 
-        <div class="box">
-          <i class="fa-solid fa-building"></i>
-          <h3>250+</h3>
-          <p>Projects Completed</p>
-        </div>
+    <div class="about-boxes">
 
-        <div class="box">
-          <i class="fa-solid fa-users"></i>
-          <h3>120+</h3>
-          <p>Expert Engineers</p>
-        </div>
+      <div class="box animate-up">
+        <i class="fa-solid fa-building"></i>
+        <h3>250+</h3>
+        <p>Projects Completed</p>
+      </div>
 
+      <div class="box animate-up delay-box">
+        <i class="fa-solid fa-users"></i>
+        <h3>120+</h3>
+        <p>Expert Engineers</p>
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- Services -->
   <section class="services" id="services">
@@ -157,21 +187,21 @@
 
       <div class="project-card">
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5"
+          src="asset/work2.webp"
           alt=""
         />
       </div>
 
       <div class="project-card">
         <img
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+          src="asset/architecture.webp"
           alt=""
         />
       </div>
 
       <div class="project-card">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+          src="asset/construction.webp"
           alt=""
         />
       </div>
@@ -208,24 +238,140 @@
 
   </section>
 
+  <!-- Work Process -->
+  <section class="process">
+
+    <div class="section-title">
+      <h2>Our Work Process</h2>
+      <p>Simple steps that keep every project clear, organized, and on time.</p>
+    </div>
+
+    <div class="process-container">
+
+      <div class="process-box">
+        <span>01</span>
+        <h3>Consultation</h3>
+        <p>We understand your project idea, space requirements, budget, and timeline.</p>
+      </div>
+
+      <div class="process-box">
+        <span>02</span>
+        <h3>Planning</h3>
+        <p>Our team prepares design direction, material planning, and site schedules.</p>
+      </div>
+
+      <div class="process-box">
+        <span>03</span>
+        <h3>Construction</h3>
+        <p>We execute the work with skilled engineers, safety checks, and quality control.</p>
+      </div>
+
+      <div class="process-box">
+        <span>04</span>
+        <h3>Handover</h3>
+        <p>Final inspection, finishing checks, and smooth delivery of the completed project.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+
+    <div class="section-title">
+      <h2>Client Feedback</h2>
+      <p>What our clients say about working with BuildCon.</p>
+    </div>
+
+    <div class="testimonial-container">
+
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>
+          BuildCon handled our office renovation with excellent planning and
+          delivered the project before the expected date.
+        </p>
+        <h3>Michael Brown</h3>
+      </div>
+
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>
+          The team was professional, transparent, and very careful with every
+          detail of our new home construction.
+        </p>
+        <h3>Emma Johnson</h3>
+      </div>
+
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>
+          Their material quality and site management were impressive. We would
+          happily work with them again.
+        </p>
+        <h3>Robert Davis</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!-- Footer -->
   <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img class="footer-logo" src="asset/logo.webp" alt="BuildCon logo" />
+        <p>
+          Professional Construction & Engineering Services for residential,
+          commercial, and renovation projects.
+        </p>
 
-    <h2>BuildCon</h2>
+        <div class="social-icons">
+          <a href="../page/NotFoud.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="../page/NotFoud.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="../page/NotFoud.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="../page/NotFoud.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
 
-    <p>
-      Professional Construction & Engineering Services
-    </p>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../page/Home.html">Home</a></li>
+          <li><a href="../page/About.html">About</a></li>
+          <li><a href="../page/services.html">Services</a></li>
+          <li><a href="../page/Project.html">Projects</a></li>
+          <li><a href="../page/Contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-    <div class="social-icons">
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="../page/services.html">Building Construction</a></li>
+          <li><a href="../page/services.html">Architecture Design</a></li>
+          <li><a href="../page/services.html">Renovation</a></li>
+          <li><a href="../page/services.html">Site Supervision</a></li>
+          <li><a href="../page/services.html">Project Planning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+          <li><i class="fa-solid fa-envelope"></i> info@buildcon.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> 45 Builder Street, New York, USA</li>
+        </ul>
+      </div>
     </div>
 
     <p class="copy">
-      &copy; 2026 BuildCon. All Rights Reserved.
+      &copy; 2026 Stackly. All Rights Reserved.
     </p>
 
   </footer>

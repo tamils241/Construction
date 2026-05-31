@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Stackly</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header class="page-hero">
+    <nav class="navbar">
+      <a class="logo" href="../construction-home-page/index.html">
+        <img src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Project.html">Projects</a></li>
+        <li><a class="active" href="Contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+   <section class="hero-content">
+
+  <p class="hero-subtitle">
+    Contact Us
+  </p>
+
+  <h1 class="hero-title">
+    Let Us Help You Start
+    <br>
+    Your Next Project
+  </h1>
+
+</section>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>
+          Share your construction idea, renovation need, or project question.
+          Our team will respond with the next steps.
+        </p>
+
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 234 567 8900</span>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@stackly.com</span>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>45 Builder Street, Selam, Tamil Nadu</span>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Phone Number" />
+        <select required>
+          <option value="">Select Project Type</option>
+          <option>Home Construction</option>
+          <option>Commercial Construction</option>
+          <option>Renovation</option>
+          <option>Architecture Design</option>
+        </select>
+        <textarea placeholder="Project Details" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img class="footer-logo" src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+        <p>
+          Professional Construction & Engineering Services for residential,
+          commercial, and renovation projects.
+        </p>
+
+        <div class="social-icons">
+          <a href="NotFoud.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="NotFoud.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="NotFoud.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="NotFoud.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="services.html">Building Construction</a></li>
+          <li><a href="services.html">Architecture Design</a></li>
+          <li><a href="services.html">Renovation</a></li>
+          <li><a href="services.html">Site Supervision</a></li>
+          <li><a href="services.html">Project Planning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+          <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> 45 Builder Street, Selam, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copy">
+      &copy; 2026 Stackly. All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildCon Services</title>
+  <link rel="stylesheet" href="service.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header class="page-hero">
+    <nav class="navbar">
+      <a class="logo" href="../construction-home-page/index.html">
+        <img src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="Project.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <section class="hero-content">
+
+  <p class="hero-subtitle">
+    Our Services
+  </p>
+
+  <h1 class="hero-title">
+    Complete Construction Solutions
+    <br>
+    For Every Space
+  </h1>
+
+</section>
+  </header>
+
+  <main>
+    <section class="services">
+      <article class="service-card">
+        <i class="fa-solid fa-building"></i>
+        <h2>Building Construction</h2>
+        <p>Residential, commercial, and industrial construction managed from foundation to finishing.</p>
+      </article>
+      <article class="service-card">
+        <i class="fa-solid fa-drafting-compass"></i>
+        <h2>Architecture Design</h2>
+        <p>Practical layouts, elevation concepts, and design planning for strong and useful spaces.</p>
+      </article>
+      <article class="service-card">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h2>Renovation</h2>
+        <p>Home, office, and retail renovation work with clean execution and durable materials.</p>
+      </article>
+      <article class="service-card">
+        <i class="fa-solid fa-helmet-safety"></i>
+        <h2>Site Supervision</h2>
+        <p>Daily site coordination, safety checks, labor management, and progress tracking.</p>
+      </article>
+      <article class="service-card">
+        <i class="fa-solid fa-truck-pickup"></i>
+        <h2>Material Supply</h2>
+        <p>Reliable sourcing for cement, steel, tiles, fixtures, and finishing products.</p>
+      </article>
+      <article class="service-card">
+        <i class="fa-solid fa-clipboard-check"></i>
+        <h2>Project Planning</h2>
+        <p>Budget estimates, timelines, drawings, and work schedules before construction begins.</p>
+      </article>
+    </section>
+
+    <section class="process">
+      <h2>How We Work</h2>
+      <div class="process-grid">
+        <div><span>01</span><h3>Consult</h3><p>We understand your needs, budget, and timeline.</p></div>
+        <div><span>02</span><h3>Plan</h3><p>Our team prepares drawings, estimates, and schedules.</p></div>
+        <div><span>03</span><h3>Build</h3><p>Construction is completed with supervision and safety checks.</p></div>
+        <div><span>04</span><h3>Handover</h3><p>We inspect, finish, and deliver the completed project.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img class="footer-logo" src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+        <p>
+          Professional Construction & Engineering Services for residential,
+          commercial, and renovation projects.
+        </p>
+
+        <div class="social-icons">
+          <a href="NotFoud.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="NotFoud.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="NotFoud.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="NotFoud.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="services.html">Building Construction</a></li>
+          <li><a href="services.html">Architecture Design</a></li>
+          <li><a href="services.html">Renovation</a></li>
+          <li><a href="services.html">Site Supervision</a></li>
+          <li><a href="services.html">Project Planning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+          <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> 45 Builder Street, Selam, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copy">
+      &copy; 2026 Stackly. All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BuildCon Home</title>
+  <title>Stackly Home</title>
 
   <link rel="stylesheet" href="Home.css" />
   <link
@@ -15,14 +15,16 @@
 
   <header class="home-header" id="home">
     <nav class="navbar">
-      <h1 class="logo">Build<span>Con</span></h1>
+      <a class="logo" href="../construction-home-page/index.html">
+        <img src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+      </a>
 
       <ul class="nav-links" id="homeNavLinks">
-        <li><a href="../index.html">Main</a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="../construction-home-page/index.html">Main</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Project.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
       </ul>
 
       <div class="menu-btn" id="homeMenuBtn">
@@ -31,20 +33,26 @@
     </nav>
 
     <section class="hero">
-      <div class="hero-content">
-        <h3>Construction & Engineering</h3>
-        <h1>We Build Strong Spaces For Better Living</h1>
-        <p>
-          BuildCon delivers residential, commercial, and renovation projects
-          with quality materials, expert planning, and on-time delivery.
-        </p>
+  <div class="hero-content">
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Us</a>
-        </div>
-      </div>
-    </section>
+    <h3 class="hero-tagline">Construction & Engineering</h3>
+
+    <h1 class="hero-title">
+      We Build Strong <span>Spaces</span> For Better Living
+    </h1>
+
+    <p class="hero-description">
+      BuildCon delivers residential, commercial, and renovation projects
+      with quality materials, expert planning, and on-time delivery.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="Project.html" class="btn">View Projects</a>
+      <a href="Contact.html" class="btn btn-outline">Contact Us</a>
+    </div>
+
+  </div>
+</section>
   </header>
 
   <main>
@@ -101,7 +109,7 @@
 
       <div class="project-grid">
         <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5" alt="Commercial construction project" />
+          <img src="../construction-home-page/asset/work.webp" alt="Commercial construction project" />
           <div>
             <h3>Commercial Tower</h3>
             <p>Steel structure, safety planning, and concrete work for a modern business space.</p>
@@ -109,7 +117,7 @@
         </div>
 
         <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction planning project" />
+          <img src="../construction-home-page/asset/architecture.webp" alt="Construction planning project" />
           <div>
             <h3>Residential Villa</h3>
             <p>Complete home construction with planning, elevation design, and interior finishing.</p>
@@ -117,7 +125,7 @@
         </div>
 
         <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Modern building project" />
+          <img src="../construction-home-page/asset/construction.webp" alt="Modern building project" />
           <div>
             <h3>Corporate Office</h3>
             <p>Modern office building completed with durable materials and clean architectural lines.</p>
@@ -129,13 +137,64 @@
     <section class="contact" id="contact">
       <h2>Have a new project?</h2>
       <p>Tell us your idea and our team will help you plan the next step.</p>
-      <a href="../index.html#contact" class="btn">Get In Touch</a>
+      <a href="Contact.html" class="btn">Get In Touch</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <h2>BuildCon</h2>
-    <p>&copy; 2026 BuildCon. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img class="footer-logo" src="../construction-home-page/asset/logo.webp" alt="BuildCon logo" />
+        <p>
+          Professional Construction & Engineering Services for residential,
+          commercial, and renovation projects.
+        </p>
+
+        <div class="social-icons">
+          <a href="NotFoud.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="NotFoud.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="NotFoud.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="NotFoud.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="services.html">Building Construction</a></li>
+          <li><a href="services.html">Architecture Design</a></li>
+          <li><a href="services.html">Renovation</a></li>
+          <li><a href="services.html">Site Supervision</a></li>
+          <li><a href="services.html">Project Planning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+          <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> 45 Builder Street, Selam, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copy">
+      &copy; 2026 Stackly. All Rights Reserved.
+    </p>
+
   </footer>
 
   <script>
