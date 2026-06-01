@@ -12,6 +12,7 @@
   />
 </head>
 <body>
+  
 
   <header class="home-header" id="home">
     <nav class="navbar">
@@ -21,10 +22,10 @@
 
       <ul class="nav-links" id="homeNavLinks">
         <li><a href="../index.html">Main</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="Project.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="NotFoud.html">About</a></li>
+        <li><a href="NotFoud.html">Services</a></li>
+        <li><a href="NotFoud.html">Projects</a></li>
+        <li><a href="NotFoud.html">Contact</a></li>
       </ul>
 
       <div class="menu-btn" id="homeMenuBtn">
@@ -163,20 +164,20 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="Project.html">Projects</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="NotFoud.html">About</a></li>
+          <li><a href="NotFoud.html">Services</a></li>
+          <li><a href="NotFoud.html">Projects</a></li>
+          <li><a href="NotFoud.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
         <h3>Our Services</h3>
         <ul>
-          <li><a href="services.html">Building Construction</a></li>
-          <li><a href="services.html">Architecture Design</a></li>
-          <li><a href="services.html">Renovation</a></li>
-          <li><a href="services.html">Site Supervision</a></li>
+          <li><a href="NotFoud.html">Building Construction</a></li>
+          <li><a href="NotFoud.html">Architecture Design</a></li>
+          <li><a href="NotFoud.html">Renovation</a></li>
+          <li><a href="NotFoud.html">Site Supervision</a></li>
           <li><a href="services.html">Project Planning</a></li>
         </ul>
       </div>
@@ -197,14 +198,32 @@
 
   </footer>
 
-  <script>
-    const homeMenuBtn = document.getElementById("homeMenuBtn");
-    const homeNavLinks = document.getElementById("homeNavLinks");
+ <script>
+const homeMenuBtn = document.getElementById("homeMenuBtn");
+const homeNavLinks = document.getElementById("homeNavLinks");
+const menuIcon = homeMenuBtn.querySelector("i");
 
-    homeMenuBtn.addEventListener("click", () => {
-      homeNavLinks.classList.toggle("active");
-    });
-  </script>
+homeMenuBtn.addEventListener("click", () => {
+  homeNavLinks.classList.toggle("active");
+
+  if (homeNavLinks.classList.contains("active")) {
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-xmark");
+  } else {
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+  }
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll("#homeNavLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    homeNavLinks.classList.remove("active");
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+  });
+});
+</script>
 
 </body>
 </html>

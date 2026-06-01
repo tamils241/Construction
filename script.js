@@ -41,17 +41,38 @@ document
   .forEach((el) => observer.observe(el));
 
   if (menuBtn && navLinks) {
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  }
+  const menuIcon = menuBtn.querySelector("i");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      contactForm.reset();
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+      menuIcon.classList.replace("fa-bars", "fa-xmark");
+    } else {
+      menuIcon.classList.replace("fa-xmark", "fa-bars");
+    }
+  });
+
+  // Close menu when a link is clicked
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      menuIcon.classList.replace("fa-xmark", "fa-bars");
     });
-  }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      navLinks.classList.contains("active") &&
+      !navLinks.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      navLinks.classList.remove("active");
+      menuIcon.classList.replace("fa-xmark", "fa-bars");
+    }
+  });
+}
 
   setTimeout(hideLoader, 700);
   window.addEventListener("load", hideLoader);
