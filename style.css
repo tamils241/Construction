@@ -92,12 +92,17 @@ body {
 
 .logo {
   width: 130px;
-  height: auto;
   display: block;
   padding: 6px;
-  background: rgba(35,35,35,0.76);
   border-radius: 8px;
   filter: hue-rotate(200deg) saturate(1.4);
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  color:rgb(227, 10, 10);
 }
 
 .nav-menu {
